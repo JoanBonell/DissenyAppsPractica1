@@ -2061,7 +2061,7 @@ ul.icons {
   background-color: #1100ff;
   color: rgba(255, 255, 255, 0.75);
   background-attachment: fixed;
-  background-image: linear-gradient(rgba(206, 27, 40, 0.25), rgba(206, 27, 40, 0.25)), url(../../images/cta01.jpg);
+  background-image: linear-gradient(rgba(27, 39, 206, 0.25), rgba(27, 39, 206, 0.25)), url(../../images/cta01.jpg);
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2203,6 +2203,160 @@ ul.icons {
   @media screen and (max-width: 980px) {
     #cta {
       background-attachment: scroll; } }
+
+/* Map */
+#map {
+  display: block;
+  margin: auto;
+  width: 1000px;
+  height: 500px;
+  background-image: url("/Users/RICKY/Desktop/UdL/3º Curso/Disseny d'Apps/DissenyAppsPractica1/Industrious/images/mapabase.jpg");
+  background-size: cover; 
+}
+
+a[data-src="ruta-MON.jpg"]:hover ~ #map {
+  background-image: url("/Users/RICKY/Desktop/UdL/3º Curso/Disseny d'Apps/DissenyAppsPractica1/Industrious/images/ruta-MON.jpg");
+}
+
+a[data-src="ruta-MLL.jpg"]:hover ~ #map {
+  background-image: url("/Users/RICKY/Desktop/UdL/3º Curso/Disseny d'Apps/DissenyAppsPractica1/Industrious/images/ruta-MLL.jpg");
+}
+
+a[data-src="ruta-ROM.jpg"]:hover ~ #map {
+  background-image: url("/Users/RICKY/Desktop/UdL/3º Curso/Disseny d'Apps/DissenyAppsPractica1/Industrious/images/ruta-ROM.jpg");
+}
+
+a[data-src="ruta-ATH.jpg"]:hover ~ #map {
+  background-image: url("/Users/RICKY/Desktop/UdL/3º Curso/Disseny d'Apps/DissenyAppsPractica1/Industrious/images/ruta-ATH.jpg");
+}
+
+a[data-src="ruta-BCN.jpg"]:hover ~ #map {
+  background-image: url("/Users/RICKY/Desktop/UdL/3º Curso/Disseny d'Apps/DissenyAppsPractica1/Industrious/images/ruta-BCN.jpg");
+}
+
+/* Estilos para los enlaces de las rutas */
+a[data-src] {
+  color: inherit; /* Hereda el color del texto del elemento padre */
+  text-decoration: none; /* Elimina el subrayado */
+  display: block; /* Hace que los enlaces se muestren uno encima del otro */
+  margin-bottom: 10px; /* Agrega un espacio entre los enlaces */
+}
+
+.rutas-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.imagen-accion {
+  background-image: url("/Users/RICKY/Desktop/UdL/3º Curso/Disseny d'Apps/DissenyAppsPractica1/Industrious/images/vaixell1.jpg");
+  background-size: 100% 100%; /* Ajusta el tamaño de la imagen para que llene completamente el div */
+  background-position: center; /* Centra la imagen */
+  width: 250px; /* Ajusta el ancho del div */
+  height: 150px; /* Ajusta la altura del div */
+  margin: auto; /* Centra el div en su contenedor */
+  display: block; /* Hace que el div sea un bloque, necesario para centrarlo con margin: auto */
+  transition: transform 1s ease-in-out; /* Agrega una transición suave al hacer hover */
+}
+
+.imagen-accion:hover {
+  transform: scale(1.2);
+}
+
+.imagen-accion2 {
+  background-image: url("/Users/RICKY/Desktop/UdL/3º Curso/Disseny d'Apps/DissenyAppsPractica1/Industrious/images/vaixell2.jpg");
+  background-size: 100% 100%; /* Ajusta el tamaño de la imagen para que llene completamente el div */
+  background-position: center; /* Centra la imagen */
+  width: 250px; /* Ajusta el ancho del div */
+  height: 150px; /* Ajusta la altura del div */
+  margin: auto; /* Centra el div en su contenedor */
+  display: block; /* Hace que el div sea un bloque, necesario para centrarlo con margin: auto */
+  transition: transform 1s ease-in-out; /* Agrega una transición suave al hacer hover */
+}
+
+.imagen-accion2:hover {
+  transform: rotate(360deg);
+}
+
+.imagen-accion3 {
+  background-image: url("/Users/RICKY/Desktop/UdL/3º Curso/Disseny d'Apps/DissenyAppsPractica1/Industrious/images/vaixell3.jpg");
+  background-size: 100% 100%; /* Ajusta el tamaño de la imagen para que llene completamente el div */
+  background-position: center; /* Centra la imagen */
+  width: 250px; /* Ajusta el ancho del div */
+  height: 150px; /* Ajusta la altura del div */
+  margin: auto; /* Centra el div en su contenedor */
+  display: block; /* Hace que el div sea un bloque, necesario para centrarlo con margin: auto */
+  transition: transform 1s ease-in-out; /* Agrega una transición suave al hacer hover */
+}
+
+.imagen-accion3:hover {
+  transform: translateY(-50px);
+}
+
+.imagen-accion4 {
+  background-image: url("/Users/RICKY/Desktop/UdL/3º Curso/Disseny d'Apps/DissenyAppsPractica1/Industrious/images/vaixell4.jpg");
+  background-size: 100% 100%; /* Ajusta el tamaño de la imagen para que llene completamente el div */
+  background-position: center; /* Centra la imagen */
+  width: 250px; /* Ajusta el ancho del div */
+  height: 150px; /* Ajusta la altura del div */
+  margin: auto; /* Centra el div en su contenedor */
+  display: block; /* Hace que el div sea un bloque, necesario para centrarlo con margin: auto */
+  transition: transform 1s ease-in-out; /* Agrega una transición suave al hacer hover */
+}
+
+.imagen-accion4:hover {
+  opacity: 0.5;
+}
+
+.imagen-accion5 {
+  background-image: url("/Users/RICKY/Desktop/UdL/3º Curso/Disseny d'Apps/DissenyAppsPractica1/Industrious/images/vaixell5.jpg");
+  background-size: 100% 100%; /* Ajusta el tamaño de la imagen para que llene completamente el div */
+  background-position: center; /* Centra la imagen */
+  width: 250px; /* Ajusta el ancho del div */
+  height: 150px; /* Ajusta la altura del div */
+  margin: auto; /* Centra el div en su contenedor */
+  display: block; /* Hace que el div sea un bloque, necesario para centrarlo con margin: auto */
+  transition: transform 1s ease-in-out; /* Agrega una transición suave al hacer hover */
+}
+
+.imagen-accion5:hover {
+  transform: scale(1.2);
+  filter: blur(2px);
+}
+
+.imagen-accion6 {
+  background-image: url("/Users/RICKY/Desktop/UdL/3º Curso/Disseny d'Apps/DissenyAppsPractica1/Industrious/images/vaixell6.jpg");
+  background-size: 100% 100%; /* Ajusta el tamaño de la imagen para que llene completamente el div */
+  background-position: center; /* Centra la imagen */
+  width: 250px; /* Ajusta el ancho del div */
+  height: 150px; /* Ajusta la altura del div */
+  margin: auto; /* Centra el div en su contenedor */
+  display: block; /* Hace que el div sea un bloque, necesario para centrarlo con margin: auto */
+  transition: transform 1s ease-in-out; /* Agrega una transición suave al hacer hover */
+}
+
+.imagen-accion6:hover {
+  transform: scale(1.2) 
+  skewX(20deg);
+}
+
+.texto-debajo-imagen {
+  font-size: 20px; /* Ajusta el tamaño de la fuente */
+  color: #333; /* Ajusta el color de la fuente */
+  text-align: center; /* Centra el texto */
+  margin-top: 5px; /* Agrega un espacio entre la imagen y el texto */
+  /* Agrega cualquier otro estilo que necesites */
+}
+
+.texto-debajo-imagen1 {
+  font-size: 15px; /* Ajusta el tamaño de la fuente */
+  color: #333; /* Ajusta el color de la fuente */
+  text-align: center; /* Centra el texto */
+  margin-top: -30px; /* Agrega un espacio entre la imagen y el texto */
+  /* Agrega cualquier otro estilo que necesites */
+}
+
 
 /* Footer */
 #footer {
