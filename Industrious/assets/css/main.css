@@ -2204,6 +2204,18 @@ ul.icons {
     #cta {
       background-attachment: scroll; } }
 
+#imagen-movil {
+  position: absolute;
+  top: 1250px; /* Ajusta esto a la posición que desees */
+  left: 0;
+  pointer-events: none; /* El ratón ignora la imagen */
+  transition: left 2s, transform 0.5s; /* Transiciones suaves para el movimiento y la rotación */
+  transform-style: preserve-3d; /* Permite transformaciones 3D */
+  perspective: 1000px; /* Añade perspectiva a la rotación 3D */
+}
+
+
+
 /* Map */
 #map {
   display: block;
