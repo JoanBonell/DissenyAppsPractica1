@@ -2986,3 +2986,19 @@ body.is-menu-visible #menu {
   transform: translateX(0);
   box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.2);
   visibility: visible; }
+
+  .brujula {
+    display: block; /* Hace que el elemento sea un bloque, permitiendo el uso de márgenes automáticos */
+    margin-left: auto; /* Margen automático izquierdo */
+    margin-right: auto; /* Margen automático derecho */
+    top: 100px;
+    width: 100px; /* Ajusta al tamaño de tu imagen */
+    height: 100px; /* Ajusta al tamaño de tu imagen */
+    background-image: url('../../images/bruixola.png');
+    background-size: cover;
+    border-radius: 50%;
+    position: relative;
+  }
+  
+  
+  

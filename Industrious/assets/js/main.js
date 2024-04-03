@@ -79,6 +79,14 @@ $(document).ready(function() {
     $(document).on('mousemove touchmove', position);
 });
 
-
-
-
+document.addEventListener('mousemove', function(e) {
+    var brujula = document.getElementById('brujula');
+    var rect = brujula.getBoundingClientRect();
+    var centerX = rect.left + (rect.width / 2);
+    var centerY = rect.top + (rect.height / 2);
+  
+    var angleRadians = Math.atan2(e.clientY - centerY, e.clientX - centerX);
+    var angleDeg = (angleRadians * (180 / Math.PI) + 360) % 360;
+  
+    brujula.style.transform = 'rotate(' + angleDeg + 'deg)';
+  });
