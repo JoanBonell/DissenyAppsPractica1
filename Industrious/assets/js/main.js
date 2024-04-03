@@ -93,3 +93,29 @@ document.addEventListener('mousemove', function(e) {
 
     brujula.style.transform = 'rotate(' + angleDegNorte + 'deg)';
 });
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    var imagenAccion6 = document.querySelector('.imagen-accion6');
+
+    imagenAccion6.addEventListener('click', function() {
+        var body = document.body;
+        var icebergImageContainer = document.createElement('div');
+        icebergImageContainer.style.position = 'fixed';
+        icebergImageContainer.style.left = '0';
+        icebergImageContainer.style.top = '0';
+        icebergImageContainer.style.width = '100%';
+        icebergImageContainer.style.height = '100%';
+        icebergImageContainer.style.display = 'flex';
+        icebergImageContainer.style.justifyContent = 'center';
+        icebergImageContainer.style.alignItems = 'center';
+        icebergImageContainer.style.backgroundColor = 'rgba(0,0,0,0.5)';
+        icebergImageContainer.style.zIndex = '1000';
+        icebergImageContainer.innerHTML = '<img src="../Industrious/images/iceberg.png" style="max-width:60%; max-height:80%;">';
+        body.appendChild(icebergImageContainer);
+
+        icebergImageContainer.addEventListener('click', function() {
+            body.removeChild(icebergImageContainer);
+        });
+    });
+});
