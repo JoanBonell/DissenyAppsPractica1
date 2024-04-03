@@ -95,27 +95,28 @@ document.addEventListener('mousemove', function(e) {
 });
 
 
+
 document.addEventListener("DOMContentLoaded", function() {
     var imagenAccion6 = document.querySelector('.imagen-accion6');
 
     imagenAccion6.addEventListener('click', function() {
         var body = document.body;
-        var icebergImageContainer = document.createElement('div');
-        icebergImageContainer.style.position = 'fixed';
-        icebergImageContainer.style.left = '0';
-        icebergImageContainer.style.top = '0';
-        icebergImageContainer.style.width = '100%';
-        icebergImageContainer.style.height = '100%';
-        icebergImageContainer.style.display = 'flex';
-        icebergImageContainer.style.justifyContent = 'center';
-        icebergImageContainer.style.alignItems = 'center';
-        icebergImageContainer.style.backgroundColor = 'rgba(0,0,0,0.5)';
-        icebergImageContainer.style.zIndex = '1000';
-        icebergImageContainer.innerHTML = '<img src="../Industrious/images/iceberg.png" style="max-width:60%; max-height:80%;">';
-        body.appendChild(icebergImageContainer);
+        var gifContainer = document.createElement('div');
+        gifContainer.style.position = 'fixed';
+        gifContainer.style.left = '0';
+        gifContainer.style.top = '0';
+        gifContainer.style.width = '100%';
+        gifContainer.style.height = '100%';
+        gifContainer.style.display = 'flex';
+        gifContainer.style.justifyContent = 'center';
+        gifContainer.style.alignItems = 'center';
+        gifContainer.style.backgroundColor = 'rgba(0,0,0,0.5)';
+        gifContainer.style.zIndex = '1000';
+        gifContainer.innerHTML = '<img src="../Industrious/images/iceberg.gif" style="max-width:60%; max-height:80%;">';
+        body.appendChild(gifContainer);
 
-        icebergImageContainer.addEventListener('click', function() {
-            body.removeChild(icebergImageContainer);
+        gifContainer.addEventListener('click', function() {
+            body.removeChild(gifContainer);
         });
     });
 });
